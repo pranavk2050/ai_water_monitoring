@@ -1,5 +1,6 @@
 import { Droplets, GitBranch, ExternalLink } from 'lucide-react'
 import { GITHUB_URL } from '../../utils/constants'
+import lastUpdated from '../../data/lastUpdated.json'
 
 const sources = [
   { name: 'FAO AQUASTAT', url: 'https://www.fao.org/aquastat/' },
@@ -53,7 +54,13 @@ export default function Footer() {
             >
               <GitBranch size={16} /> View on GitHub
             </a>
-            <p className="text-slate-500 text-xs">Last updated: June 2026</p>
+            <p className="text-slate-500 text-xs">
+              Water data last updated:{' '}
+              {new Date(lastUpdated.waterReserves).toLocaleDateString('en-US', {
+                year: 'numeric', month: 'long', day: 'numeric',
+              })}
+              {' '}({lastUpdated.source})
+            </p>
             <p className="text-slate-500 text-xs mt-1">Data is approximate and for awareness purposes.</p>
           </div>
         </div>

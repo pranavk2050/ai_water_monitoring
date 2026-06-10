@@ -103,7 +103,8 @@ export default function CountryWaterMap() {
 
   return (
     <div>
-      <div className="flex gap-1 mb-4 bg-slate-800/80 rounded-lg p-1 w-fit">
+      <div className="flex items-center gap-3 mb-4">
+        <div className="flex gap-1 bg-slate-800/80 rounded-lg p-1 w-fit">
         {modes.map((m, i) => (
           <button
             key={m.key}
@@ -115,6 +116,11 @@ export default function CountryWaterMap() {
             {m.label}
           </button>
         ))}
+        </div>
+        <div className="flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-2.5 py-1">
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+          <span className="text-emerald-400 text-[10px] font-medium">Live data from World Bank</span>
+        </div>
       </div>
 
       <div className="hidden sm:block bg-slate-800/30 rounded-xl border border-slate-700/50 overflow-hidden relative">

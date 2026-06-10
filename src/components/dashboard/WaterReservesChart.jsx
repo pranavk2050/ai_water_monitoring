@@ -22,7 +22,11 @@ const CustomTooltip = ({ active, payload }) => {
 
 export default function WaterReservesChart() {
   return (
-    <div className="h-[500px] w-full">
+    <div className="h-[500px] w-full relative">
+      <div className="absolute top-0 right-0 flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-2.5 py-1 z-10">
+        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+        <span className="text-emerald-400 text-[10px] font-medium">Live data from World Bank</span>
+      </div>
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={sorted} layout="vertical" margin={{ left: 80, right: 20, top: 5, bottom: 5 }}>
           <XAxis
