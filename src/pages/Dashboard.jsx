@@ -13,13 +13,16 @@ import ImpactSection from '../components/dashboard/ImpactSection'
 import SectionHeading from '../components/ui/SectionHeading'
 import TabGroup from '../components/ui/TabGroup'
 import Card from '../components/ui/Card'
+import ErrorBoundary from '../components/ui/ErrorBoundary'
 
 export default function Dashboard() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100">
       <Navbar />
 
-      <HeroStats />
+      <ErrorBoundary fallbackMessage="Hero section failed to load">
+        <HeroStats />
+      </ErrorBoundary>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 space-y-20 pb-12">
         {/* Section 2: World Water Reserves */}
@@ -29,14 +32,18 @@ export default function Dashboard() {
             title="Global Water Reserves"
             subtitle="Renewable freshwater resources by country — the baseline under threat"
           />
-          <Card>
-            <CountryWaterMap />
-          </Card>
-          <div className="mt-6">
+          <ErrorBoundary fallbackMessage="Water map failed to load">
             <Card>
-              <h3 className="text-lg font-semibold text-white mb-4">Top 20 Countries by Water Reserves</h3>
-              <WaterReservesChart />
+              <CountryWaterMap />
             </Card>
+          </ErrorBoundary>
+          <div className="mt-6">
+            <ErrorBoundary fallbackMessage="Water reserves chart failed to load">
+              <Card>
+                <h3 className="text-lg font-semibold text-white mb-4">Top 20 Countries by Water Reserves</h3>
+                <WaterReservesChart />
+              </Card>
+            </ErrorBoundary>
           </div>
         </section>
 
@@ -47,13 +54,17 @@ export default function Dashboard() {
             title="Big Tech Water Footprint"
             subtitle="How much water the largest AI companies consume"
           />
-          <Card>
-            <TabGroup tabs={['Company Comparison (2023)', 'Growth Trend (2019-2024)']}>
-              <CompanyConsumptionChart />
-              <TimelineChart />
-            </TabGroup>
-          </Card>
-          <ComparisonCards />
+          <ErrorBoundary fallbackMessage="Company charts failed to load">
+            <Card>
+              <TabGroup tabs={['Company Comparison (2023)', 'Growth Trend (2019-2024)']}>
+                <CompanyConsumptionChart />
+                <TimelineChart />
+              </TabGroup>
+            </Card>
+          </ErrorBoundary>
+          <ErrorBoundary fallbackMessage="Comparison cards failed to load">
+            <ComparisonCards />
+          </ErrorBoundary>
         </section>
 
         {/* Section 4: Data Center Water by Country */}
@@ -63,9 +74,11 @@ export default function Dashboard() {
             title="Data Center Water by Country"
             subtitle="Direct cooling water vs. electricity-related water consumption"
           />
-          <Card>
-            <CountryAIUsageChart />
-          </Card>
+          <ErrorBoundary fallbackMessage="Data center chart failed to load">
+            <Card>
+              <CountryAIUsageChart />
+            </Card>
+          </ErrorBoundary>
         </section>
 
         {/* Section 5: Future Projections */}
@@ -75,9 +88,11 @@ export default function Dashboard() {
             title="Future Projections"
             subtitle="Three scenarios for AI water demand through 2035"
           />
-          <Card>
-            <ProjectionChart />
-          </Card>
+          <ErrorBoundary fallbackMessage="Projection chart failed to load">
+            <Card>
+              <ProjectionChart />
+            </Card>
+          </ErrorBoundary>
         </section>
 
         {/* Section 6: Water Stress Gauges */}
@@ -87,7 +102,9 @@ export default function Dashboard() {
             title="Regional Water Stress"
             subtitle="Key regions where AI data centers intersect with water scarcity"
           />
-          <WaterStressGauge />
+          <ErrorBoundary fallbackMessage="Water stress gauges failed to load">
+            <WaterStressGauge />
+          </ErrorBoundary>
         </section>
 
         {/* Section 7: Impact & Awareness */}
@@ -97,7 +114,9 @@ export default function Dashboard() {
             title="Real-Time Impact"
             subtitle="AI's water consumption is happening right now"
           />
-          <ImpactSection />
+          <ErrorBoundary fallbackMessage="Impact section failed to load">
+            <ImpactSection />
+          </ErrorBoundary>
         </section>
       </main>
 
