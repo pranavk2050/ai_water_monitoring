@@ -1,0 +1,62 @@
+{
+  "companies": [
+    {
+      "name": "Google",
+      "totalWater2023": 24224,
+      "totalWater2022": 20177,
+      "unit": "million liters",
+      "yoyGrowth": 20,
+      "dataCenterCountries": [
+        { "country": "USA", "directCooling": 8500, "electricityWater": 4200 },
+        { "country": "Ireland", "directCooling": 1100, "electricityWater": 520 },
+        { "country": "Netherlands", "directCooling": 950, "electricityWater": 400 },
+        { "country": "Singapore", "directCooling": 780, "electricityWater": 350 },
+        { "country": "Finland", "directCooling": 620, "electricityWater": 180 },
+        { "country": "Belgium", "directCooling": 580, "electricityWater": 290 },
+        { "country": "Chile", "directCooling": 450, "electricityWater": 210 }
+      ]
+    },
+    {
+      "name": "Microsoft",
+      "totalWater2023": 6435,
+      "totalWater2022": 4800,
+      "unit": "million liters",
+      "yoyGrowth": 34,
+      "dataCenterCountries": [
+        { "country": "USA", "directCooling": 2800, "electricityWater": 1400 },
+        { "country": "Ireland", "directCooling": 380, "electricityWater": 180 },
+        { "country": "Netherlands", "directCooling": 320, "electricityWater": 140 },
+        { "country": "Singapore", "directCooling": 260, "electricityWater": 120 },
+        { "country": "Sweden", "directCooling": 180, "electricityWater": 50 }
+      ]
+    },
+    {
+      "name": "Meta",
+      "totalWater2023": 8726,
+      "totalWater2022": 7570,
+      "unit": "million liters",
+      "yoyGrowth": 15,
+      "dataCenterCountries": [
+        { "country": "USA", "directCooling": 4200, "electricityWater": 2100 },
+        { "country": "Ireland", "directCooling": 520, "electricityWater": 240 },
+        { "country": "Singapore", "directCooling": 340, "electricityWater": 160 },
+        { "country": "Denmark", "directCooling": 280, "electricityWater": 80 }
+      ]
+    },
+    {
+      "name": "Amazon",
+      "totalWater2023": 7130,
+      "totalWater2022": 5900,
+      "unit": "million liters",
+      "yoyGrowth": 21,
+      "dataCenterCountries": [
+        { "country": "USA", "directCooling": 3200, "electricityWater": 1600 },
+        { "country": "Ireland", "directCooling": 410, "electricityWater": 190 },
+        { "country": "Germany", "directCooling": 340, "electricityWater": 170 },
+        { "country": "Japan", "directCooling": 280, "electricityWater": 140 }
+      ]
+    }
+  ],
+  "globalAITotal2025": 1000000,
+  "unit": "million liters"
+}

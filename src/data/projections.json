@@ -1,0 +1,73 @@
+{
+  "scenarios": [
+    {
+      "name": "Current Growth (20% CAGR)",
+      "color": "#ef4444",
+      "dataKey": "current",
+      "data": [
+        { "year": 2020, "value": 280 },
+        { "year": 2021, "value": 336 },
+        { "year": 2022, "value": 403 },
+        { "year": 2023, "value": 484 },
+        { "year": 2024, "value": 580 },
+        { "year": 2025, "value": 1000 },
+        { "year": 2026, "value": 1200 },
+        { "year": 2027, "value": 1440 },
+        { "year": 2028, "value": 1728 },
+        { "year": 2029, "value": 2074 },
+        { "year": 2030, "value": 2488 },
+        { "year": 2031, "value": 2986 },
+        { "year": 2032, "value": 3583 },
+        { "year": 2033, "value": 4300 },
+        { "year": 2034, "value": 5160 },
+        { "year": 2035, "value": 6192 }
+      ]
+    },
+    {
+      "name": "Accelerated (30% CAGR)",
+      "color": "#f97316",
+      "dataKey": "accelerated",
+      "data": [
+        { "year": 2020, "value": 280 },
+        { "year": 2021, "value": 364 },
+        { "year": 2022, "value": 473 },
+        { "year": 2023, "value": 615 },
+        { "year": 2024, "value": 800 },
+        { "year": 2025, "value": 1000 },
+        { "year": 2026, "value": 1300 },
+        { "year": 2027, "value": 1690 },
+        { "year": 2028, "value": 2197 },
+        { "year": 2029, "value": 2856 },
+        { "year": 2030, "value": 3713 },
+        { "year": 2031, "value": 4827 },
+        { "year": 2032, "value": 6275 },
+        { "year": 2033, "value": 8158 },
+        { "year": 2034, "value": 10605 },
+        { "year": 2035, "value": 13786 }
+      ]
+    },
+    {
+      "name": "With Efficiency Gains (10% CAGR)",
+      "color": "#22c55e",
+      "dataKey": "efficient",
+      "data": [
+        { "year": 2020, "value": 280 },
+        { "year": 2021, "value": 308 },
+        { "year": 2022, "value": 339 },
+        { "year": 2023, "value": 373 },
+        { "year": 2024, "value": 410 },
+        { "year": 2025, "value": 1000 },
+        { "year": 2026, "value": 1100 },
+        { "year": 2027, "value": 1210 },
+        { "year": 2028, "value": 1331 },
+        { "year": 2029, "value": 1464 },
+        { "year": 2030, "value": 1611 },
+        { "year": 2031, "value": 1772 },
+        { "year": 2032, "value": 1949 },
+        { "year": 2033, "value": 2144 },
+        { "year": 2034, "value": 2358 },
+        { "year": 2035, "value": 2594 }
+      ]
+    }
+  ]
+}

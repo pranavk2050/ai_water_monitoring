@@ -1,0 +1,38 @@
+[
+  {
+    "action": "One ChatGPT conversation (10-50 queries)",
+    "waterML": 500,
+    "equivalent": "One standard water bottle",
+    "icon": "MessageSquare"
+  },
+  {
+    "action": "Training GPT-4",
+    "waterML": 700000000,
+    "equivalent": "280 Olympic swimming pools",
+    "icon": "Brain"
+  },
+  {
+    "action": "Generating one AI image",
+    "waterML": 3300,
+    "equivalent": "Half a toilet flush",
+    "icon": "Image"
+  },
+  {
+    "action": "One Google search",
+    "waterML": 7.8,
+    "equivalent": "A tablespoon of water",
+    "icon": "Search"
+  },
+  {
+    "action": "One AI-summarized email",
+    "waterML": 25,
+    "equivalent": "A shot glass of water",
+    "icon": "Mail"
+  },
+  {
+    "action": "Training a large language model",
+    "waterML": 500000000,
+    "equivalent": "200 Olympic pools",
+    "icon": "Cpu"
+  }
+]

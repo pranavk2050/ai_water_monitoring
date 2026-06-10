@@ -1,0 +1,8 @@
+[
+  { "year": 2019, "Google": 15200, "Microsoft": 3050, "Meta": 4300, "Amazon": 3500 },
+  { "year": 2020, "Google": 15800, "Microsoft": 3400, "Meta": 5100, "Amazon": 4100 },
+  { "year": 2021, "Google": 17400, "Microsoft": 3800, "Meta": 5900, "Amazon": 4700 },
+  { "year": 2022, "Google": 20177, "Microsoft": 4800, "Meta": 7570, "Amazon": 5900 },
+  { "year": 2023, "Google": 24224, "Microsoft": 6435, "Meta": 8726, "Amazon": 7130 },
+  { "year": 2024, "Google": 28400, "Microsoft": 8200, "Meta": 10100, "Amazon": 8900 }
+]
